@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d6db797d41.js" crossorigin="anonymous"></script>
+  <title>Fisheye - photographe </title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="assets/images/logo.png" class="logo" alt="FishEye Home Page"></a>
+  </header>
+  <main id="main">
+    <!--------------profil----------------------->
+
+    <section class="profil" aria-label="photographer profil" ></section>
+
+    <!------------------ DROPDOWN -------------->
+    <div class="tri">
+
+      <label id="label-select" class="trie_par">Trier par</label>
+      <div class="dropdown">
+        <select id="select" class="option">
+          <option id="Populaire" value="popularity">Popularity </option>
+          <option id="date" value="date">Date</option>
+          <option id="title" value="title">Title</option>
+        </select>
+
+      </div>
+
+    </div>
+    <!------------------------>
+    <div id="info-like-price" aria-label="photographer likes and price"></div>
+    
+
+
+    <!------------------photos de chaque phtographer---------------->
+
+    <section id='media' aria-label="photographer media"></section>
+  </main>
+
+  <!----------------modal-------------------------->
+
+  <div id="contact_modal" role="dialog" aria-labelledby="form-title"> 
+
+    <div class="modal">
+      <header  aria-label="contact form header">
+        <div class = "modale-title" id="form-title">
+        <h2>Contactez-moi</h2>
+
+        <h2 id="name-Photographer"></h2>
+      </div>
+   
+        <img src="assets/icons/close.svg" onclick="closeModal()" alt="close Modal" aria-label="Close dialog" tabindex="0">
+      </header>
+
+
+      <form id="contact-form">
+        
+        
+        <div class="formData" data-error="Vous devez entrer votre Prénom" data-error-visible="false">
+          <label for="first" id="label-firstname">Prénom</label><br>
+          <input class="text-control" type="text" id="first" name="first" minlength="2" aria-labelledby="label-firstname" tabindex="0"><br>
+        </div>
+
+        <div class="formData" data-error="Vous devez entrer votre nom" data-error-visible="false">
+          <label for="last" id="label-lastname">Nom</label><br>
+          <input class="text-control" type="text" id="last" name="last" aria-labelledby="label-firstname" tabindex="0"><br>
+        </div>
+
+        <div class="formData" data-error="Vous devez entrer un adresse email valide" data-error-visible="false">
+          <label for="email" id="label-email">E-mail</label><br>
+          <input class="text-control" type="email" id="email" name="email" aria-labelledby="label-email" tabindex="0"><br>
+        </div>
+
+        <div class="formData" data-error="Vous devez entrer votre message." data-error-visible="false">
+          <label for="message" id="label-message">Votre message</label>
+          <textarea name="message" id="message" cols="20" rows="5" aria-labelledby="label-message" tabindex="0"></textarea>
+        </div>
+
+        <button class="contact_button" type="submit" aria-label="Envoyer" tabindex="0">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-----------------------------lightbox-------------------------------->
+
+  <div class="lightbox"></div>
+  
+  <script src="/scripts/pages/photographer.js" type="module"></script>
+  <script src="/scripts/utils/contactForm.js"></script>
+</body>
+
+</html>
