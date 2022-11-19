@@ -7,12 +7,13 @@
 function displayModal() {
    
 	modal.style.display = "block";
-
+  document.querySelector("#first").focus();
 }
 
 function closeModal() {
    
     modal.style.display = "none";
+    document.querySelector(".contact_button").focus();
 }
 
 window.addEventListener('keydown', (e) => {
@@ -147,7 +148,8 @@ form.addEventListener("submit", function (e) {
 });
 
 function confirmationSubmit() {
-  alert("merci pour votre contacte")
+  alert("merci pour votre message.Nous vous répondrons dès que possible.")
   modal.style.display = "none";
+  document.querySelector(".contact_button").focus();
 }
 
