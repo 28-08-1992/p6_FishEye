@@ -92,7 +92,7 @@ lastname.addEventListener("change", checkLastName);
 
 email.addEventListener("change", checkEmail);
 
-const btnEnvoyer = document.getElementsByClassName("contact_button");
+//const btnEnvoyer = document.getElementsByClassName("contact_button");
 
 function formValidation() {
   if (
