@@ -109,6 +109,7 @@ main {
 }
 
 .modal header {
+    display: flex;
     justify-content: space-between;
     max-height: 20vh;
     width: 100%;
