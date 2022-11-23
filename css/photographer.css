@@ -120,7 +120,7 @@ main {
     cursor: pointer;
 }
 
-.modal header h2 {
+.modal header h2, span {
     font-size: 2.8rem;
     margin: 0;
     font-weight: normal;
@@ -192,7 +192,6 @@ article video
     inset: 0;
     z-index: 99;
     margin: auto;
-    display: none;
 }
 
 .media-info {
