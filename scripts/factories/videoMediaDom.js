@@ -10,8 +10,8 @@ export default function videoMediaFactory(data) {
       a.setAttribute("href", `#`);
       const article = document.createElement("article");
       const videoMedia = document.createElement("video");
-      videoMedia.setAttribute("controls", "");
-      videoMedia.setAttribute("autoplay", "true");
+      //videoMedia.setAttribute("controls", "");
+      //videoMedia.setAttribute("autoplay", "true");
       const source = document.createElement("source");
       source.setAttribute("src", mediaLink);
       const divMediaInfo = document.createElement("div");
